@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/king.ico" type="image/x-icon">
+        <title>Xadrez</title>
+    </head>
+    <body>
+        
+        <header> <!-- By JS --> </header> 
+
+        <div id="alert-box-position"> <!--By JS--> </div> <div id="fixed-position-padding"></div>
+
+        <main>
+            <div class="container background-with-border-sample shadow-box-sample">
+                <div class="container-margin">
+                    <h1>Peças:</h1>
+
+                    <table>
+                        <tr>
+                            <td><img src="images/pawnW.png" alt="Peão"></td>
+                            <td class="table-piece-type">Peão</td>
+                            <td class="show-move underline-hover" show-move="Peão">Movimentação</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/rookW.png" alt="Torre"></td>
+                            <td class="table-piece-type">Torre</td>
+                            <td class="show-move underline-hover" show-move="Torre">Movimentação</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/bishopW.png" alt="Bispo"></td>
+                            <td class="table-piece-type">Bispo</td>
+                            <td class="show-move underline-hover" show-move="Bispo">Movimentação</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/knightW.png" alt="Cavalo"></td>
+                            <td class="table-piece-type">Cavalo</td>
+                            <td class="show-move underline-hover" show-move="Cavalo">Movimentação</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/kingW.png" alt="Rei"></td>
+                            <td class="table-piece-type">Rei</td>
+                            <td class="show-move underline-hover" show-move="Rei">Movimentação</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/queenW.png" alt="Rainha"></td>
+                            <td class="table-piece-type">Rainha</td>
+                            <td class="show-move underline-hover" show-move="Rainha">Movimentação</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>            
+
+            <hr class="division">
+
+            <a href="html/jogar.html"><button class="button-sample background-with-border-sample">Jogar!</button></a>
+
+            <hr class="division">
+
+            <div class="container background-with-border-sample shadow-box-sample">
+                <div class="container-margin">
+                    
+                    <h1 class="underline"> - Referências - </h1>
+                    
+                    <div id="referencias"> <!-- By JS --> </div>
+                    
+                    <img src="images/drop-down.png" alt="seta para baixo" id="drop-down">
+                </div>
+            </div>            
+        </main>
+
+        <footer> <!-- By JS --> </footer>
+
+        <script type="module" src="./js/element.js"></script>
+        <script type="module" src="./js/page-configurator.js"></script>
+        <script type="module" src="./js/alert-box.js"></script>
+        <script type="module" src="./js/xadrez.js"></script>
+        <script type="module" src="./js/script.js"></script>
+        <script type="module">
+            import { createHeader , createFooter } from './js/page-configurator.js';
+            createHeader('images/kingW.png' , '#' , 'html/jogar.html' , 'html/sobre-mim.html');
+            createFooter('images/kingW.png' , '#' , 'images/instagram.png' , 'images/facebook.png' , 'images/twitter.png' );
+        </script>
+    </body>
+</html>
